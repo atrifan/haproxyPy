@@ -226,6 +226,9 @@ class HaProxy:
             row['act'] = '0'
 
 
+if len(sys.argv) == 1:
+    parser.print_help()
+    sys.exit(0)
 
 haProxy = HaProxy()
 haProxy.makeRequest()
